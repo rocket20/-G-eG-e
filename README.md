@@ -1,5 +1,5 @@
 # Marketplace Store Template
-Template ini dapat  digunakan untuk memulai project berupa e-commerce.
+ Güe Güe
 
 <hr>
 ## Frontend
@@ -19,7 +19,7 @@ Template ini dapat  digunakan untuk memulai project berupa e-commerce.
 
 MIT License
 
-Copyright (c) 2020 Adi Hernawan
+Copyright (c) 2022 Güe Güe Nicaragua
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
