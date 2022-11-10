@@ -217,17 +217,7 @@
      </div>
     </nav>
     
-   <footer>
-     <div class="container">
-       <div class="row">
-         <div class="col-12 text-center">
-           <p class="pt-4 pb-2">
-            &copy; 2020 Copyright Store Jajan. All Right Reserved Adi Hernawan.
-           </p>
-         </div>
-       </div>
-     </div>
-   </footer>
+ </footer>
     <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery/jquery.slim.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -236,6 +226,41 @@
     <script>
       AOS.init();
     </script>
-    <script src="/script/navbar-scroll.js"></script>
+    <script src="/vendor/vue/vue.js"></script>
+    <script>
+      var gallery = new Vue({
+        el: "#gallery",
+        mounted() {
+          AOS.init();
+        },
+        data: {
+          activePhoto: 0,
+          photos: [
+            {
+              id: 1,
+              url: "/images/product-details-1.jpg",
+            },
+            {
+              id: 2,
+              url: "/images/product-details-2.jpg",
+            },
+            {
+              id: 3,
+              url: "/images/product-details-3.jpg",
+            },
+            {
+              id: 4,
+              url: "/images/product-details-4.jpg",
+            },
+          ],
+        },
+        methods: {
+          changeActive(id){
+             this.activePhoto = id;
+          }
+        }
+      })
+    </script>
+    <script src="/script/navbar-scroll.js"></script
   </body>
 </html>
