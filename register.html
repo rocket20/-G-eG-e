@@ -9,7 +9,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title> GUE GUE </title>
+    <title> Regístrate </title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="style/main.css" rel="stylesheet" />
@@ -47,7 +47,7 @@
           
            <div class="col-lg-4">
              <h2>
-               Memulai untuk jual beli <br> dengan cara terbaru
+               Regístrate! <br> 
              </h2>
              <form class="mt-3">
               <div class="form-group">
@@ -61,29 +61,7 @@
               <div class="form-group">
                 <label>Password</label>
                 <input type="password" name="password" class="form-control">
-              </div>
-              <div class="form-group">
-                <label>Store</label>
-                <p class="text-muted">Apakah anda ingin membuka toko ?</p>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" name="is_store_open" id="OpenStoreTrue" v-model="is_store_open" :value="true">
-                  <label for="OpenStoreTrue" class="custom-control-label">Iya, boleh</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" name="is_store_open" id="OpenStoreFalse" v-model="is_store_open" :value="false">
-                  <label for="OpenStoreFalse" class="custom-control-label">Enggak, makasih</label>
-                </div>
-              </div>
-              <div class="form-group" v-if="is_store_open">
-                <label>Nama Toko</label>
-                <input type="text" name="nama_toko" class="form-control">
-              </div>
-              <div class="form-group" v-if="is_store_open">
-                <label>Kategori</label>
-                <select name="category" id="" class="form-control">
-                  <option value="" disable>Select Category</option>
-                </select>
-              </div>
+         
               <a href="register-success.html" class="btn btn-success btn-block  mt-4">Sign Up Now</a>
               <a href="login.html" class="btn btn-signup btn-block mt-2">Back to Sign In</a>
              </form>
