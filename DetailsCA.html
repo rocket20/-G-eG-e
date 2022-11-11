@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title> Guayaberas </title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
+    data-aos="fade-down">
+      <div class="container">
+        <a href="/index.html" class="navbar-brand">
+          <img src="/images/logo.svg" alt="Logo" />
+        </a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a href="/index.html" class="nav-link">Home</a>
+          </li>
+                         
+        </ul>
+         <!-- Dekstop menu -->
+         <ul class="navbar-nav d-none d-lg-flex">
+          <li class="nav-item dropdown">
+          
+        </li>
+        </ul>
+        <!-- Mobile Menu -->
+        <ul class="navbar-nav d-block d-lg-none">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Hi, Adi
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link d-inline-block">
+              Cart
+            </a>
+          </li>
+        </ul>
+      </div>
+     </div>
+  </nav>
+ 
+  <!-- Page Content -->
+  <div class="page-content page-details">
+    <section class="store-breadcrumbs" data-aos="fade-down" data-aos-delay="100">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active">
+                 Product Details
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="store-gallery" id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8" data-aos="zoom-in">
+            <transition name="slide-fade" mode="out-in">
+              <img :src="photos[activePhoto].url" :key="photos[activePhoto].id" class="w-100 min-image" alt="">
+            </transition>
+          </div>
+          <div class="col-lg-2">
+            <div class="row">
+              <div class="col-3 col-lg-12 mt-2 mt-lg-0" v-for="(photo, index) in photos" :key="photo.id" data-aos="zoom-in" data-aos-delay="100">
+                <a href="#" @click="changeActive(index)">
+                  <img :src="photo.url" class="w-100 thumbnail-image" :class="{ active: index == activePhoto }" alt="">
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="store-details-container" data-aos="fade-up">
+      <section class="store-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <h1>Guayaberas</h1>
+              <div class="owner"></div>
+              <div class="price">$75</div>
+            </div>
+            <div class="col-lg-2" data-aos="zoom-in">
+              <a href="https://wa.me/50558513171" class="btn btn-success px-4 text-white btn-block mb-3">Buy</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="store-description">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <p>
+                Diseño Caraceña 
+            </p>
+              <p>
+                Una Guayabera inspirada en lo que es la Meseta de Carazo, 
+                el sur de Nicaragua. Un pueblo Dirían, orgulloso de sus danzas milenarias como el Toro Huaco
+                y de ser la Cuna del Gueguense, una Joya cultural para la humanidad. !
+              </p>
+                     <p>
+                Diseño Chontaleña
+            </p>
+              <p>
+                Este Diseño tiene elementos clásicos y elegantes de la vestimenta del lugar,
+                combinan con la cultura de crianza de Equinos y la vida en un ambiente de Naturaleza 
+              </p>
+                       <p>
+                Diseño Granadina 
+            </p>
+              <p>
+                Inspirada en la arquitectura colonial y reconociendo su valor pluricultural
+                al ser una de las ciudades más importantes de Nicaragua. 
+                Pieza diseñada con un cuello tipo Mao, corte varonil elegante,
+                adornado con elementos como la madera, hacen de esta pieza una digna representante de la ciudad. 
+              </p>
+                          <p>
+                Diseño Leonesa 
+            </p>
+              <p>
+                Cuando hablamos de este estilo, nos referimos a tradición, a lo bohemio.
+                Nos remontamos en las memorias y llegamos a la Cotona, 
+                esa que lleva esencia a música, a poesía, a danza, a Nicaragua 
+              </p>
+              
+            </div>
+            
+          </div>
+        </div>
+
+  <!-- End Page Content -->
+   <footer>
+     <div class="container">
+       <div class="row">
+         <div class="col-12 text-center">
+           <p class="pt-4 pb-2">
+            &copy; 2022 Copyright Store GUE GUE
+           </p>
+         </div>
+       </div>
+     </div>
+   </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+    <script>
+      AOS.init();
+    </script>
+    <script src="/vendor/vue/vue.js"></script>
+    <script>
+      var gallery = new Vue({
+        el: "#gallery",
+        mounted() {
+          AOS.init();
+        },
+        data: {
+          activePhoto: 0,
+          photos: [
+            {
+              id: 1,
+              url: "/images/1.jpg",
+            },
+            {
+              id: 2,
+              url: "/images/10.jpg",
+            },
+            {
+              id: 3,
+              url: "/images/11.jpg",
+            },
+            {
+              id: 4,
+              url: "/images/12.jpg",
+            },
+          ],
+        },
+        methods: {
+          changeActive(id){
+             this.activePhoto = id;
+          }
+        }
+      })
+    </script>
+    <script src="/script/navbar-scroll.js"></script>
+  </body>
+</html>
