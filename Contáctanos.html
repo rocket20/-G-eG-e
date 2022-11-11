@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Formulario</title>
+
+</head>
+<style type="text/css">
+/* reglas CSS para formulario */
+.form-consulta {max-width: 500px; background: #eee; padding: 25px; font-family: 'Source Sans Pro', sans-serif;}
+.campo-form {width:100%; height:36px; margin:2px 0 6px; padding-left:6px; box-sizing: border-box; border-radius:3px; border:0; font-family: 'Source Sans Pro', sans-serif; font-size:1em;}
+label span {color: #f00}
+textarea {min-height: 150px!important;}
+.btn-form {display: inline-block; border:0; background: #000; height: 46px; line-height: 46px; padding: 0 20px; border-radius: 6px; color:#fff; text-decoration: none; text-transform: uppercase; letter-spacing: 1px}
+.btn-form:hover {background: #444}
+</style>
+<body>
+    <?php
+$action=$_REQUEST['action'];
+if ($action=="")    /* display the contact form */
+    {
+    ?>
+<form  action="" method="POST" enctype="multipart/form-data" class="form-consulta">
+<input type="hidden" name="action" value="submit" class="campo-form">
+Your name:<br>
+<input name="name" type="text" value="" size="30" class="campo-form"/><br>
+Your email:<br>
+<input name="email" type="text" value="" size="30" class="campo-form"/><br>
+Your message:<br>
+<textarea name="message" rows="7" cols="30" class="campo-form"></textarea><br>
+<input type="submit" value="Send email" class="btn-form"/>
+</form>
+    <?php
+    } 
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+        echo "All fields are required, please fill <a href="">the form</a> again.";
+        }
+    else{        
+        $from="From: $name<$email>rnReturn-path: $email";
+        $subject="Message sent using your contact form";
+        mail("webmaster@tutorialesenlinea.es", $subject, $message, $from);
+        echo "Email sent!";
+        }
+    }  
+?>
+</body>
+</html>
