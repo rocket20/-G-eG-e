@@ -1,39 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Formulario de contacto</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>    
-    </head>
-    <body>
-        <form id="contact-form">
-            <h2>Formulario de contacto</h2>
-            <p>
-                <label>Nombre<br><input type="text"  name="nombre"></label><br>
-                <label>Email<br><input type="email" name="email"></label><br>
-                <label>Comentarios<br></label><textarea name="comentarios" cols=40 rows=5></textarea></label>
-            </p>
-            <input id="submit-contact-form" type="submit" value="Submit">
-        </form>
-        <script>
-        (function() {       
-            var $form = $('form#contact-form'), url = 'https://script.google.com/macros/s/key/exec';
-            $('#submit-contact-form').on('click', function(e) {
-                e.preventDefault();
-                var jqxhr = $.ajax({
-                    url: url,
-                    method: "GET",
-                    dataType: "json",
-                    data: $form.serializeObject(),
-                    success: function(data) {
-                        console.log(data);
-                        $('form#contact-form').hide();
-                        $('body').append("<p style='color:green'>Gracias por tu interés. Contactaremos contigo en breve.</p>");
-                    }
-                });
-            });
-        })();
-        </script>
-    </body>
+<html5>
+<head>
+    <title>Contácte con nosotros!</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></li>
+</head>
+<body>
+
+<div class="row">
+   <div id="templatemo_contact" class="col-md-4 gallery-contact">
+</div>
+   <div class="col-md-8 templatemo_contactform">
+   <div class="templatemo_contacttitle">CONTACTO</div>
+    <div class="templatemo_sub_contacttitle">Si requieres un subtitulo escribelo aquí</div>
+        <p> Escribe aquí el mensaje que quieres presentar si es necesario.</p>
+
+   <form action="enviar.php" method="post">
+                        <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
+                        <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
+                        <input type="text" name="phone" id="subject" class="subject" placeholder="TELÉFONO">
+                        <textarea name="message" class="message" placeholder="MENSAJE ... " id="message"></textarea>
+                        <div class="clear"></div>
+                            <div class="col-md-8"> 
+                                <button type="submit" class="btn btn-primary">ENVIAR </button>
+    </div>
+    </form>
+    </div>
+
+</body>
 </html>
+
+
