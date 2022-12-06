@@ -17,6 +17,7 @@ $carta = "Mensaje: $mensaje";
 
 
 mail($destinatario, $asunto, $carta);
+header('locaion:mensaje-de-envio.html')
 
 
 ?>
