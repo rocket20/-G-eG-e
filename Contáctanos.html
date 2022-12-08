@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formulario de contacto</title>
-
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/script.js"></script>
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
+    
+    <div class="content">
 
-    <body>
+        <h1 class="logo"> Contáctanos </h1>
 
-    <section class="form_wrap">
-
-        <section class="cantact_info">
-            <section class="info_title">
-                <span class="fa fa-user-circle"></span>
-                <h2>INFORMACION<br>DE CONTACTO</h2>
-            </section>
-            <section class="info_items">
-                <p><span class="fa fa-envelope"></span> gueguedba@gmail.com</p>
-                <p><span class="fa fa-mobile"></span> +505 58513171</p>
-            </section>
-        </section>
-
-        <form action="https://formsubmit.co/leonelalvarez.info@gmail.com" method="POST" class="form_contact">
-            <h2>Envia un mensaje</h2>
-            <div class="user_info">
-                <label for="names">Nombres *</label>
-                <input type="text" id="names" required>
-
-                <label for="phone">Telefono / Celular</label>
-                <input type="text" id="phone">
-
-                <label for="email">Correo electronico *</label>
-                <input type="text" id="email" required>
-
-                <label for="mensaje">Mensaje *</label>
-                <textarea id="mensaje" required></textarea>
-
-                <input type="submit" value="Enviar mensaje" id="btnSend">
-                                                                       
-                                                                                   
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3></h3>
+                <form action="https://formsubmit.co/leonelalvarez.info@gmail.com" method="POST" class="form_contact">
+                    <p>
+                        <label>Nombre completo</label>
+                        <input type="text" name="Nombre completo" required>
+                    </p>
+                    <p>
+                        <label>Correo</label>
+                        <input type="email" name="Correo" required>
+                    </p>
+                    <p>
+                        <label>Teléfono</label>
+                        <input type="tel" name="Teléfono">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="Asunto">
+                    </p>
+                    <p class="block">
+                       <label>Mensaje</label> 
+                        <textarea name="Mensaje" rows="3" required></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
             </div>
-        </form>
+            <div class="contact-info">
+                <h4>Más información</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Nicaragua </li>
+                    <li><i class="fas fa-phone"></i> +(505)5851 3171</li>
+                    <li><i class="fas fa-envelope-open-text"></i> gueguedba@gmail.com</li>
+                </ul>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
 
-    </section>
+    </div>
 
 </body>
-
 </html>
