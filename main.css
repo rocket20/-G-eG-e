@@ -69,7 +69,7 @@ ul {
     border: none;
     background: none;
     outline: 0;
-    color: #37d99e;
+    color: #fff;
     border-bottom: 1px solid #ffffff;
 }
 
@@ -90,7 +90,7 @@ ul {
 
 /* CONTACT INFO */
 .contact-info {
-    background: #37d99e;
+    background: #fff;
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {
