@@ -74,7 +74,7 @@ ul {
 }
 
 .contact-form form button {
-    background: #B70E21;
+    background: #ffffff;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -82,7 +82,7 @@ ul {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: #d63031;
+    background: #ffffff;
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0;
@@ -90,7 +90,7 @@ ul {
 
 /* CONTACT INFO */
 .contact-info {
-    background: #000;
+    background: #37d99e;
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {
