@@ -3,8 +3,8 @@
 }
 
 body {
-    background: #ffffff;
-    color: #37d99e;
+    background: #37d99e;
+    color: #fff;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
     padding: 0 1.5em;
@@ -90,7 +90,7 @@ ul {
 
 /* CONTACT INFO */
 .contact-info {
-    background: #fff;
+    background: #000;
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {
