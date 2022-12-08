@@ -3,8 +3,8 @@
 }
 
 body {
-    background: #181818;
-    color: #fff;
+    background: #ffffff;
+    color: #37d99e;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
     padding: 0 1.5em;
@@ -69,8 +69,8 @@ ul {
     border: none;
     background: none;
     outline: 0;
-    color: #fff;
-    border-bottom: 1px solid #d63031;
+    color: #37d99e;
+    border-bottom: 1px solid #ffffff;
 }
 
 .contact-form form button {
