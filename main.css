@@ -3,7 +3,7 @@
 }
 
 body {
-    background: #181818;
+    background: #2a5a4d;
     color: #fff;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
@@ -40,7 +40,7 @@ ul {
 }
 
 .contact-form {
-    background: #222222;
+    background: #3a8b6a;
 }
 
 .contact-form form {
@@ -70,11 +70,11 @@ ul {
     background: none;
     outline: 0;
     color: #fff;
-    border-bottom: 1px solid #d63031;
+    border-bottom: 1px solid #ffffff;
 }
 
 .contact-form form button {
-    background: #B70E21;
+    background: #1ab885;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
