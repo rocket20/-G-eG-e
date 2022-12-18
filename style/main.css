@@ -11468,7 +11468,7 @@ footer p {
 /*AQUI COMIENZA EL FOOTER*/
 
 footer {
-  background-color: #20c997;
+  background-color: #00a59e;
   color: #fff;
   padding: 20px;
   display: flex;
@@ -11476,9 +11476,35 @@ footer {
   justify-content: space-between;
 }
 
-@media (max-width: 600px) {
-  footer {
-    flex-direction: column;
-  }
+footer p {
+  margin: 0;
+  font-size: 14px;
 }
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #eee;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer li {
+  margin-right: 10px;
+}
+
+footer i {
+  font-size: 18px;
+}
+
 /*# sourceMappingURL=main.css.map */
