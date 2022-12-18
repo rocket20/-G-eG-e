@@ -11476,6 +11476,12 @@ footer {
   justify-content: space-between;
 }
 
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
 footer p {
   color: #fff;
   margin: 0;
