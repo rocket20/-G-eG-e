@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.team-member {
+  display: inline-block;
+  margin-right: 40px;
+  text-align: center;
+  vertical-align: top;
+  width: 200px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  height: 200px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
