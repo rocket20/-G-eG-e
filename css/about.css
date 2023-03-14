@@ -1,44 +1,35 @@
-/* Styles for the header */
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 1em;
-	text-align: center;
+/* Minimalist styles for the team section */
+
+.team-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-h1 {
-	margin: 0;
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Styles for the main content */
-main {
-	margin: 1em;
+.team-member {
+  flex: 1 1 200px;
+  margin: 20px;
 }
 
-section {
-	margin-bottom: 2em;
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-h2 {
-	color: #333;
-	font-size: 1.5em;
-	margin-bottom: 0.5em;
+.team-member h3 {
+  margin: 0;
+  font-size: 24px;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-li {
-	margin-bottom: 0.5em;
-}
-
-/* Styles for the footer */
-footer {
-	background-color: #ccc;
-	color: #333;
-	padding: 1em;
-	text-align: center;
+.team-member p {
+  margin: 0;
+  font-size: 18px;
 }
