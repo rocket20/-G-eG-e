@@ -1,0 +1,62 @@
+/* Reset default margin and padding values */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Set basic styles for the page */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+/* Set styles for the team section */
+.team-section {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.team-section h2 {
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+/* Set styles for the team member profiles */
+.team-members {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.team-member {
+	flex: 1 1 200px;
+	margin: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.team-member img {
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease;
+}
+
+.team-member h3 {
+	font-size: 24px;
+	margin: 15px;
+}
+
+.team-member p {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+/* Add hover effect on team member images */
+.team-member:hover img {
+	transform: scale(1.1);
+}
