@@ -64,6 +64,24 @@ body {
   text-align: left;
   background-color: #fff;
 }
+.faq {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.question {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.answer {
+    display: none;
+    margin-top: 5px;
+}
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
