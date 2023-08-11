@@ -75,7 +75,7 @@ body {
 .question {
     font-weight: bold;
     cursor: pointer;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
 .answer {
